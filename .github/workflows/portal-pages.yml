@@ -51,10 +51,10 @@ jobs:
       - name: Check deployment credentials
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_ACCOUNT_ID: '677970fae169a8c1f59efd8cc01efa9a'
         run: |
-          if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
-            echo "::error::Configure repository Actions secrets CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID to publish test Pages."
+          if [ -z "$CLOUDFLARE_API_TOKEN" ]; then
+            echo "::error::Configure repository Actions secrets CLOUDFLARE_API_TOKEN to publish test Pages."
             exit 1
           fi
       - name: Publish only to mostpomocy2-test
