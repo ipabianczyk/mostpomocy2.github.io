@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "mostpomocy2-dashboard-test",
+  "main": "src/index.js",
+  "compatibility_date": "2026-10-20",
+  "workers_dev": true,
+  "assets": {"directory": "../dist", "binding": "ASSETS", "run_worker_first": true},
+  "vars": {
+    "GITHUB_REPO": "ipabianczyk/mostpomocy2.github.io",
+    "GITHUB_BRANCH": "main",
+    "PUBLIC_SITE_URL": "https://mostpomocy2-test.pages.dev",
+    "CF_ACCESS_TEAM_DOMAIN": "gentle-meadow-b91e.cloudflareaccess.com",
+    "CF_ACCESS_AUD": "af2dc568f7dcc4c0c21448390eed68cad17703192e8360cea90e2d3c074195cf",
+    "ADMIN_EMAILS": "pabigor@gmail.com"
+  }
+}
