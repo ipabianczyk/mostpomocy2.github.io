@@ -42,6 +42,8 @@ jobs:
         run: npm run build
       - name: Guard against production-domain binding
         run: |
+          # Generator writes CNAME even for pages.dev: remove it before deploying.
+          rm -f dist/CNAME
           test ! -e dist/CNAME
           test -f dist/index.html
           test -f dist/content/public.json
