@@ -11,7 +11,7 @@
     "PUBLIC_SITE_URL": "https://mostpomocy.pl",
     "CF_ACCESS_TEAM_DOMAIN": "UZUPELNIJ.cloudflareaccess.com",
     "CF_ACCESS_AUD": "UZUPELNIJ_APPLICATION_AUD",
-    "ADMIN_EMAILS": "UZUPELNIJ_ADRES_WLASCICIELA"
+    "ADMIN_EMAILS": "pabigor@gmail.com"
   }
   // Po utworzeniu namespace KV dodaj:
   // ,"kv_namespaces": [{"binding":"CMS_STATE","id":"ID_NAMESPACE"}]
