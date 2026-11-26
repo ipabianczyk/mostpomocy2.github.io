@@ -1,7 +1,8 @@
-import {test} from 'node:test';import assert from 'node:assert/strict';import {readFile} from 'node:fs/promises';
+import {test} from 'node:test';import assert from 'node:assert/strict';import {readFile} from 'node:fs/promises';import {execFileSync} from 'node:child_process';
 import {validateContent} from '../site/assets/schema.js';import {renderSite,markdown,pageInfo} from '../site/assets/render.js';import {verifyAccess,roleFor} from '../worker/src/auth.js';import worker,{api,checkWrite} from '../worker/src/index.js';
 const data=JSON.parse(await readFile(new URL('../site/content/site.json',import.meta.url),'utf8'));
 const clone=()=>structuredClone(data);
+test('Reader Revenue Manager jest dodany do publicznych stron',async()=>{execFileSync(process.execPath,['scripts/build.mjs'],{cwd:new URL('..',import.meta.url),stdio:'ignore'});for(const path of ['dist/index.html','dist/blog/pierwszy-krok/index.html']){const html=await readFile(new URL('../'+path,import.meta.url),'utf8');assert(html.includes('src="https://news.google.com/swg/js/v1/swg-basic.js"'));assert(html.includes('isPartOfProductId: "CAow--jODA:openaccess"'));assert(html.includes('clientOptions: { theme: "light", lang: "pl" }'))}const admin=await readFile(new URL('../dist/admin/index.html',import.meta.url),'utf8');assert(!admin.includes('swg-basic.js'))});
 test('startowe dane przechodzą walidację',()=>assert.deepEqual(validateContent(data),[]));
 test('blokuje adresy file i javascript',()=>{const d=clone();d.navigation[0].href='file:///C:/Users';assert(validateContent(d).length);d.navigation[0].href='javascript:alert(1)';assert(validateContent(d).length)});
 test('blokuje duplikaty oraz nieznaną kategorię',()=>{let d=clone();d.posts[0].category='nie-istnieje';assert(validateContent(d).some(x=>x.includes('Nieznana')));d=clone();d.pages.push(d.pages[0]);assert(validateContent(d).length)});

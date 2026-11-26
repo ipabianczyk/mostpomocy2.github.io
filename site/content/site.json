@@ -258,7 +258,7 @@
     {
       "id": "prywatnosc",
       "title": "Prywatność",
-      "body": "## Dane i prywatność\n\nPubliczna strona nie wymaga założenia konta. Gdy napiszesz wiadomość, podane przez Ciebie dane są przekazywane do operatora Twojej poczty oraz skrzynki odbiorczej MostPomocy.\n\nPanel redakcyjny używa logowania Cloudflare Access. Zmiany treści są zapisywane w repozytorium GitHub. Nie umieszczaj danych poufnych w treści strony ani w historii zmian.\n\nW sprawach prywatności napisz na Mostpomocy@gmail.com.\n\nInformację o administratorze, okresach retencji i pozostałych zasadach należy uzupełnić przed uruchomieniem obsługi danych użytkowników."
+      "body": "## Dane i prywatność\n\nPubliczna strona nie wymaga założenia konta. Strony publiczne ładują skrypt Google Reader Revenue Manager w celu obsługi subskrypcji. Gdy napiszesz wiadomość, podane przez Ciebie dane są przekazywane do operatora Twojej poczty oraz skrzynki odbiorczej MostPomocy.\n\nPanel redakcyjny używa logowania Cloudflare Access. Zmiany treści są zapisywane w repozytorium GitHub. Nie umieszczaj danych poufnych w treści strony ani w historii zmian.\n\nW sprawach prywatności napisz na Mostpomocy@gmail.com.\n\nInformację o administratorze, okresach retencji, przetwarzaniu danych przez Google i pozostałych zasadach należy uzupełnić przed uruchomieniem obsługi danych użytkowników."
     },
     {
       "id": "regulamin",
