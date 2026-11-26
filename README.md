@@ -66,7 +66,7 @@ Cloudflare KV jest eventual-consistent: dodanie/odebranie roli może propagować
 
 Początkowe artykuły to ogólne teksty startowe przygotowane do edycji, a nie przeniesione archiwum poprzedniego portalu. Nie są dodane fikcyjne statystyki, opinie ani ogłoszenia. Zdjęcie nagłówka zostało wygenerowane dla projektu na podstawie kierunku wizualnego ze wzoru. Logo jest nową wektorową interpretacją motywu serca i mostu, nie oryginalnym plikiem źródłowym.
 
-Ogłoszenia od odwiedzających są przygotowywane jako wiadomość e-mail. Użytkownik musi ją wysłać we własnej poczcie, a redakcja ją zatwierdza i wprowadza do panelu. To nie jest publiczny system kont, czat, baza zgłoszeń ani aplikacja do płatności. Newsletter nie został włączony bez wskazania rzeczywistego operatora zapisu. Politykę prywatności należy uzupełnić o dane administratora i rzeczywiste zasady przetwarzania przed uruchomieniem nowych funkcji zbierania danych.
+Ogłoszenia od odwiedzających są przygotowywane jako wiadomość e-mail. Użytkownik musi ją wysłać we własnej poczcie, a redakcja ją zatwierdza i wprowadza do panelu. To nie jest publiczny system kont, czat, baza zgłoszeń ani aplikacja do płatności. Publiczne strony ładują skrypt Google Reader Revenue Manager z konfiguracją produktu `CAow--jODA:openaccess`; pełną konfigurację produktu i newslettera należy dokończyć w Reader Revenue Manager. Politykę prywatności należy uzupełnić o dane administratora i rzeczywiste zasady przetwarzania przed uruchomieniem zapisu użytkowników.
 
 Repozytorium jest publiczne: szkice, historia zmian i załączone zdjęcia również mogą być dostępne w GitHubie. Nie wpisuj danych poufnych ani prywatnych danych użytkowników. Publiczny build usuwa szkice z HTML i `public.json`, ale nie usuwa ich z historii repozytorium.
 
